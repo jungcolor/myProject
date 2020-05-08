@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div id="result"></div>
+        <div id="operatorButton"></div>
+        <script>
+
+
+            function reducer(state, action) {
+                if (state === undefined) {
+                    state = {
+                        contents: 0,
+                    }
+                }
+            };
+            var store = Redux.createStore(reducer);
+        </script>
+    </body>
+</html>
