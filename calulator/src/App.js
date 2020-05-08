@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Store from "./components/Store"
+import Store from "./components/Store";
 import Result from "./components/Result";
 import OperatorButtons from "./components/OperatorButtons";
 import './App.css';
