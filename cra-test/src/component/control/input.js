@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class Input extends Component {
-    render() {
-        return (
-            <input />
-        );
-    }
+	render() {
+		const defaultClass = "form-control";
+		return <input className={defaultClass} />;
+	}
 }
 
 export default Input;
