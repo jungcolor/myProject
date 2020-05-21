@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import FormList from "./formList";
 
+// Container Component
 class Form extends Component {
 	render() {
 		const defaultWidth = {
-			width: "750px",
+			maxWidth: "750px",
 		};
 		return (
 			<ul className="wrapper-form" style={defaultWidth}>

@@ -15,12 +15,23 @@ class App extends Component {
                     type: "form",
                     items: [
                         {
-                            id: "input",
-                            type: "BASIC",
-                            title: "테스트1",
+                            addonTitle: "아이디",
+                            controlType: "input",
                             components: {
-                                tagName: "input",
                                 placeholder: "입력하세요",
+                                type: "BASIC",
+                                title: "아이디",
+                                id: "id"
+                            }
+                        },
+                        {
+                            addonTitle: "비밀번호",
+                            controlType: "input",
+                            components: {
+                                placeholder: "입력하세요",
+                                type: "PASSWORD",
+                                title: "비밀번호",
+                                id: "password"
                             }
                         },
                     ]
@@ -28,7 +39,17 @@ class App extends Component {
             },
 
             footer: {
-                title: "footer"
+                title: "footer",
+                items: [
+                    {
+                        addonTitle: "저장",
+                        controlType: "button",
+                        components: {
+                            title: "저장",
+                            id: "save"
+                        }
+                    },
+                ]
             }
         }
 

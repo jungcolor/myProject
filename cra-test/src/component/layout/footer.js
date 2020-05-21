@@ -1,10 +1,20 @@
 import React, { Component } from "react";
+import Button from "../control/button";
 
+// Container Component
 class Footer extends Component {
 	render() {
-		const title = this.props.footerData.title;
-
-		return <div className="footer">{title}</div>;
+		return (
+            <div className="footer">
+                <div className="wrapper-toolbar">
+                    <div className="pull-left">
+                        {this.props.footerData.items.map((items, i) => {
+                            return <Button controlData={items} key={i} />
+                        })}
+                    </div>
+                </div>
+            </div>
+        );
 	}
 }
 
